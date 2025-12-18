@@ -1,9 +1,10 @@
 import { DashboardResponse } from './types';
 
+// Set base URL depending on environment
 const BASE_URL =
   process.env.NODE_ENV === 'development'
-    ? 'http://127.0.0.1:8000/api' // local Django
-    : process.env.REACT_APP_API_BASE; // production Django URL
+    ? 'http://127.0.0.1:8000/api' // local Django server
+    : 'https://greenhouse-seven.vercel.app/api'; // your deployed Django
 
 export async function fetchDashboard(month: string): Promise<DashboardResponse> {
   const response = await fetch(`${BASE_URL}/dashboard/?month=${month}`);
