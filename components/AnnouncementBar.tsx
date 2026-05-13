@@ -13,7 +13,7 @@ const AnnouncementBar: React.FC<AnnouncementBarProps> = ({ announcements }) => {
       <div className="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-slate-950 to-transparent z-10 pointer-events-none"></div>
       <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-slate-950 to-transparent z-10 pointer-events-none"></div>
       
-      <div className="ticker-scroll flex items-center" style={{ animationDuration: '40s' }}>
+      <div className="ticker-scroll flex items-center" style={{ animationDuration: '90s' }}>
         {announcements.concat(announcements).map((a, idx) => (
           <div key={idx} className="flex items-center px-10">
             <span className={`flex h-2 w-2 rounded-full mr-3 ${a.is_important ? 'bg-rose-500 animate-pulse' : 'bg-cyan-500'}`}></span>
