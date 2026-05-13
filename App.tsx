@@ -89,7 +89,7 @@ const App: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-black leading-none text-white">GREEN HOUSE</h1>
-              <p className="text-[10px] font-black text-cyan-400 uppercase tracking-[0.3em] mt-1.5 opacity-80">Financial Engine v2.0</p>
+              <p className="text-[10px] font-black text-cyan-400 uppercase tracking-[0.3em] mt-1.5 opacity-80">Finance</p>
             </div>
           </div>
 
